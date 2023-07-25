@@ -1,5 +1,5 @@
 import java.util.*;
-public class Ratna
+public class Stringprint
 {
 public static void main(String[] args)
 {
