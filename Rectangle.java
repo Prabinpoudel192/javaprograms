@@ -1,14 +1,37 @@
-import java.util.*;
-public class Rectangle
-{
-public static void main(String[] args)
-{
-Scanner sc=new Scanner(System.in);
-System.out.println("Please enter the length and breadth of rectangle:");
-float l=sc.nextFloat();
-float b=sc.nextFloat();
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package helloworld;
 
-float area=l*b;
-float peremeter=2*(l+b);
-System.out.println("The area is "+area+" and peremeter is "+peremeter);
-}}
+/**
+ *
+ * @author prabin
+ */
+class Rectangle1 {
+    float length;
+    float breadth;
+    public Rectangle1(float l,float b){
+       length=l;
+       breadth=b;
+    
+}
+   public void Area(){
+       float area=length*breadth;
+       System.out.println("The area is equal to "+area);
+   } 
+   public void Perimeter(){
+       float perimeter=(2*(length*breadth));
+       System.out.println("The peremeter is equal to "+perimeter);
+   }
+}
+public class Rectangle{
+    public static void main(String[] args){
+        Rectangle1 s1=new Rectangle1(12.32f,7.5f);
+        Rectangle1 s2=new Rectangle1(10.5f,5.3f);
+        s1.Area();
+        s1.Perimeter();
+         s2.Area();
+        s2.Perimeter();
+    }
+}
