@@ -1,8 +1,5 @@
 //we can actually initialize the jagged array in two ways.
 // 1st method Begning
-
-import java.util.*;
-
 public class Jagged {
     public static void main(String[] args) {
         int[][] a = new int[3][];
