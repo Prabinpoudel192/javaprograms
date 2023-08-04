@@ -1,3 +1,6 @@
+//we can actually initialize the jagged array in two ways.
+// 1st method Begning
+
 import java.util.*;
 
 public class Jagged {
@@ -27,3 +30,23 @@ public class Jagged {
         }
     }
 }
+//1st method end
+//2nd method begning.
+public class Jagged {
+public static void main(String[] args){
+    int[][] k=new int[][]{{15,25,35,5},{13,11,23},{3,2}};
+    
+    for(int i=0;i<3;i++){
+       int sum=0;
+       System.out.println("Elements of row "+(i+1)+" are: ");
+        for(int j=0;j<k[i].length;j++){
+            System.out.print(k[i][j]+" ");
+             sum=sum+k[i][j];
+        }
+        System.out.println("");
+        System.out.println("The sum of row "+(i+1)+" is "+sum );
+    }
+}    
+}
+//Second method end.
+//There are two codes which are complete in themself. Hence, you have to choose which is better for you.
